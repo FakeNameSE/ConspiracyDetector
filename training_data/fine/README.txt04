@@ -1,0 +1,150 @@
+     We in particular encourage you to resist the following
+temptations:
+     . Defining new splits based on whether or not the documents
+actually have any TOPICS categories.  (See the discussion of the
+ModApte split.) 
+     . Testing your system only on the "easy" categories.  This is a
+temptation we have succumbed to in the past, but will resist in the
+future.  Yes, we know that some of the  TOPICS categories have few
+or no positive training examples or few or no positive test examples
+or both.  Yes, purely supervised learning systems will do very badly
+on these categories.  Knowledge-based systems, on the other hand,
+might do well on them, while doing poorly in comparison with
+supervised learning on categories with lots of positive
+examples. These comparisons are of great interest.  Of course, it's of
+great interest to *in addition* analyze subsets of categories
+(e.g. lots of positive examples vs. few positive examples, etc.). 
+ 
+     Note that one strategy we considered and rejected is to assume
+that documents which have no TOPICS but do have categories in other
+fields (PLACES, etc.) could be assumed to belong to no TOPICS
+categories. This does not appear to be a safe assumption - we have
+found a number of examples of documents with PLACES but no TOPICS when
+there are TOPICS that clearly apply.
+
+IX. Feature Sets in Text Categorization 
+
+   For many text categorization methods, particularly those using
+statistical classification techniques, it is convenient to represent
+documents not as a sequence of characters, but rather as a tuple of
+numeric or binary feature values.  For instance, the value of feature
+Fi for a document Dj might be  if the string of characters
+"financial" occurred in the document with whitespace on either side,
+and  otherwise.  Or the value of Fi for Dj might be the number of
+occurrences of "financial" in document Dj.  In information retrieval
+such features are often called "indexing terms" and one often speaks
+of a term being "present" in a document, to mean that the feature
+takes on a non-default value. (Usually, but not always, any value but
+ is non-default.)
+
+  Comparisons between text categorization methods that represent
+documents as feature tuples are aided by ensuring that the same tuple
+representation is used with all methods, thus avoiding conflating
+differences in feature extraction with differences in, say, machine
+learning methods.  For that reason, the Reuters- distribution
+included not only the formatted text of the Reuters stories, but also
+feature tuple representations of the stories in each of two feature
+sets, one based on words and one based on noun phrases.  Surprisingly,
+almost no use was made of these files by other researchers, so we have
+not included files of this sort in the Reuters- distribution.
+
+    However, we are willing to make available as part of the
+distribution any tuple representations of this sort that researchers
+want to contribute. (Contact lewis@research.att.com if you would like
+to do this.) Perhaps the ideal situation would be if someone with a
+strong interest in feature set formation produced tuples based on a
+high quality set of features which other researchers interested only
+in learning algorithms could make use of.
+
+
+X. Bibliography
+
+[This needs to be updated.]
+
+@article{APTE
+ ,author = "Chidanand Apt{\'{e}} and Fred Damerau and Sholom M. Weiss"
+ ,title = "Automated Learning of Decision Rules for Text Categorization"
+ ,journal = "ACM Transactions on Information Systems"
+ ,year = 
+ , note = "To appear."
+ }
+
+@inproceedings{APTEb
+ ,author = "Chidanand Apt{\'{e}} and Fred Damerau and Sholom M. Weiss"
+ ,title = "Toward Language Independent Automated Learning of Text Categorization Models"
+ ,booktitle = sigir
+ ,year = 
+ ,note = "To appear."
+ }
+
+@inproceedings{HAYES
+,author = "Philip J. Hayes and Peggy M. Anderson and Irene B. Nirenburg and 
+Linda M. Schmandt"
+,title = "{TCS}: A Shell for Content-Based Text Categorization"
+,booktitle = "IEEE Conference on Artificial Intelligence Applications"
+,year = 
+}
+
+@inproceedings{HAYESb
+,author = "Philip J. Hayes and Steven P. Weinstein"
+,title = "{CONSTRUE/TIS:} A System for Content-Based Indexing of a 
+Database of News Stories"
+,booktitle = "Second Annual Conference on Innovative Applications of
+Artificial Intelligence"
+,year = 
+}
+
+@incollection{HAYES 
+ ,author = "Philip J. Hayes"
+ ,title = "Intelligent High-Volume Text Processing using Shallow,
+Domain-Specific Techniques" 
+ ,booktitle = "Text-Based Intelligent Systems"
+ ,publisher = "Lawrence Erlbaum"
+ ,address =  "Hillsdale, NJ"
+ ,year = 
+ ,editor = "Paul S. Jacobs"
+}
+
+@inproceedings{LEWISc 
+  ,author = "David D. Lewis" 
+  ,title = "Evaluating Text Categorization" 
+  ,booktitle = "Proceedings of Speech and Natural Language Workshop" 
+  ,year =  
+  ,month = feb 
+  ,organization = "Defense Advanced Research Projects Agency" 
+  ,publisher = "Morgan Kaufmann" 
+  ,pages = "--" 
+
+}
+
+@phdthesis{LEWISd
+,author = "David Dolan Lewis"
+,title = "Representation and Learning in Information Retrieval"
+,school = "Computer Science Dept.; Univ. of Massachusetts; Amherst, MA "
+,year = 
+,note = "Technical Report --."
+}
+
+@inproceedings{LEWISe
+,author = "David D. Lewis"
+,title = "Data Extraction as Text Categorization: An Experiment with
+the {MUC-} Corpus"
+,booktitle = "Proceedings of the Third Message Understanding Evaluation
+and Conference"
+,year = 
+,month = may
+,organization = "Defense Advanced Research Projects Agency"
+,publisher = "Morgan Kaufmann"
+,address = "Los Altos, CA"
+
+}
+
+@inproceedings{LEWISb
+ ,author = "David D. Lewis"
+ ,title = "An Evaluation of Phrasal and Clustered Representations on a Text
+Categorization Task"
+ ,booktitle = "Fifteenth Annual International ACM SIGIR Conference on
+Research and Development in Information Retrieval"
+ ,year = 
+ ,pages = "--"
+}

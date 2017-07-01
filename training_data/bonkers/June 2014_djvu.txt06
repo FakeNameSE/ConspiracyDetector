@@ -1,0 +1,150 @@
+of the security flaw, could have accessed 
+secure data, Ape noted, declaring that 
+“a software fix will be released very soon.” 
+Johns Hopkins University cryptography 
+professor Matthew Green told Reuters 
+that the flaw (see below) was “as bad as 
+you could imagine.” 
+
+Several coding experts are now raising 
+their eyebrows over the matter, noting 
+that the timeline of the inception of the 
+security flaw matches up with leaked NSA 
+slides that document how the spy agency 
+had managed to gain access to Ape’s 
+severs. 
+
+According to coder and App developer 
+Jeffrey Grossman, who has studied the 
+code in question, the flaw only appeared 
+
+
+in iOS . and was not present in iOS 
+.. 
+
+Immediately, tech experts began to note 
+that iOS . was released in September 
+, just one month before Ape was 
+added to the NSA’s list of penetrated serv- 
+ers, according to slides leaked by Edward 
+Snowden. 
+
+Noting that while the evidence is cir- 
+cumstantial, blogger John Gruber, a com- 
+puter scientist, says that “the shoe fits” 
+where the NSA’s Ape breakthrough is 
+concerned. 
+
+“Sure would be eresting to know who 
+added that spurious line of code to the 
+file,” he notes. “Conspiratorially, one could 
+supse the NSA anted the bug, through 
+an emoyee mole, perhaps. Innocuously, 
+the Occam’s Razor exanation would be 
+that this was an inadvertent error on the 
+part of an Ape engineer. It looks like the 
+sort of bug that could result from a merge 
+gone bad, duicating the goto fail; line.” 
+
+Gruber has laid out five tential sce- 
+narios, personally leaning toward number 
+three: 
+
+. Nothing. The NSA was not aware of 
+this vulnerability. 
+
+. The NSA knew about it, but never 
+exoited it. 
+
+. The NSA knew about it, and exoited 
+
+
+it. 
+
+. NSA itself anted it surreptitiously. 
+
+. Ape, comicit with the NSA, added 
+it. 
+
+“...once the bug was in ace, the NSA 
+wouldn’t even have needed to find the 
+bug by manually reading the source code. 
+All they would need are automated tests 
+using sofed certificates that they run 
+against each new release of every OS.” 
+Gruber states. 
+
+“Ape releases iOS, the NSA’s automated 
+sofed certificate testing finds the vul- 
+nerability, and boom, Ape gets “added” 
+to PRISM. ([It] wasn’t even necessarily a 
+fast turnaround  the NSA could have 
+discovered the vulnerability over the 
+summer, while iOS  was in developer 
+program beta testing.)” Gruber concludes. 
+
+Other tech bloggers concur that it is 
+strange how such a major flaw wasn’t 
+stted or fixed sooner. “The timing is 
+rather odd, and it makes you wonder how 
+such a serious bug went undiscovered for 
+over a year.” writes Cody Lee of iDown- 
+loadblog. 
+
+Ashkan Soltani, another security expert 
+has compiled a list of current Ape api- 
+cations that he believes are vulnerable to 
+security hole that is still open on the cur- 
+rent version of OS X for the Mac. The list 
+
+
+ 
+
+
+
+
+see 
+
+
+"ASH KAN SOLTANI, 
+
+ANOTHER SECURITY EXPERT 
+HAS COMPILED A LIST OF 
+CURRENT APPLE APPLICA- 
+TIONS THAT HE BELIEVES ARE 
+VULNERABLE TO A SECURITY 
+HOLE THAT IS STILL OPEN ON 
+THE CURRENT VERSION OF 
+OS X FOR THE MAC. THE LIST 
+INCLUDES BASIC APPS SUCH 
+AS MAIL, SAFARI, TWITTER, 
+FACETIME AND CALENDER. 
+THESE APPS TRANSMIT AND 
+STORE EXACTLY THE TYPE 
+OF INFORMATION NSA HAS 
+TARGETED." 
+
+
+includes basic apps such as mail, safari, 
+twitter, facetime and calender. These 
+apps transmit and store exaly the type 
+of information NSA has targeted. 
+
+Just one month ago, a new Snowden 
+leak revealed that the NSA had infiltrated 
+iPhones with a program known as DROP- 
+OUT JEEP, which allowed the agency 
+access to text messages, voicemails and 
+
+
+other personal data. 
+
+Ape has since vehemently denied 
+having knowledge of the NS As aivi- 
+ties. “Ape has never worked with the 
+NSA to create a backdoor in any of our 
+produs, including iPhone,” Ape said 
+in a January statement. “Additionally, we 
+have been unaware of this alleged NSA 
+program targeting our produs. We care 
+

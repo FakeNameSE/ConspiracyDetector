@@ -1,0 +1,150 @@
+
+          Reuters- text categorization test collection
+                        Distribution .
+                       README file (v .)
+                         September 
+
+                         David D. Lewis
+                      AT&T Labs - Research     
+                     lewis@research.att.com
+
+I. Introduction
+
+   This README describes Distribution . of the Reuters- text
+categorization test collection, a resource for research in information
+retrieval, machine learning, and other corpus-based research.
+
+
+II. Copyright & Notification 
+
+   The copyright for the text of newswire articles and Reuters
+annotations in the Reuters- collection resides with Reuters Ltd.
+Reuters Ltd. and Carnegie Group, Inc. have agreed to allow the free
+distribution of this data *for research purposes only*.  
+   If you publish results based on this data set, please acknowledge
+its use, refer to the data set by the name "Reuters-,
+Distribution .", and inform your readers of the current location of
+the data set (see "Availability & Questions").
+
+
+III. Availability & Questions
+
+   The Reuters-, Distribution . test collection is available
+from David D. Lewis' professional home page, currently:
+             http://www.research.att.com/~lewis
+
+Besides this README file, the collection consists of  data files, an
+SGML DTD file describing the data file format, and six files
+describing the categories used to index the data.  (See Sections VI
+and VII for more details.)  Some additional files, which are not part
+of the collection but have been contributed by other researchers as
+useful resources are also included.  All files are available
+uncompressed, and in addition a single gzipped Unix tar archive of the
+entire distribution is available as reuters.tar.gz.
+
+   The text categorization mailing list, DDLBETA, is a good place to
+send questions about this collection and other text categorization
+issues. You may join the list by writing David Lewis at
+lewis@research.att.com.
+
+
+IV. History & Acknowledgements
+
+   The documents in the Reuters- collection appeared on the
+Reuters newswire in .  The documents were assembled and indexed
+with categories by personnel from Reuters Ltd. (Sam Dobbins, Mike
+Topliss, Steve Weinstein) and Carnegie Group, Inc. (Peggy Andersen,
+Monica Cellio, Phil Hayes, Laura Knecht, Irene Nirenburg) in .  
+
+In , the documents were made available by Reuters and CGI for
+research purposes to the Information Retrieval Laboratory (W.  Bruce
+Croft, Director) of the Computer and Information Science Department at
+the University of Massachusetts at Amherst.  Formatting of the
+documents and production of associated data files was done in  by
+David D.  Lewis and Stephen Harding at the Information Retrieval
+Laboratory.
+
+Further formatting and data file production was done in  and 
+by David D. Lewis and Peter Shoemaker at the Center for Information
+and Language Studies, University of Chicago.  This version of the data
+was made available for anonymous FTP as "Reuters-, Distribution
+." in January . From  through , Distribution . was
+hosted at a succession of FTP sites maintained by the Center for
+Intelligent Information Retrieval (W. Bruce Croft, Director) of the
+Computer Science Department at the University of Massachusetts at
+Amherst.
+
+At the ACM SIGIR ' conference in August,  a group of text
+categorization researchers discussed how published results on
+Reuters- could be made more comparable across studies.  It was
+decided that a new version of collection should be produced with less
+ambiguous formatting, and including documentation carefully spelling
+out standard methods of using the collection.  The opportunity would
+also be used to correct a variety of typographical and other errors in
+the categorization and formatting of the collection.
+
+Steve Finch and David D. Lewis did this cleanup of the collection
+September through November of , relying heavily on Finch's
+SGML-tagged version of the collection from an earlier study.  One
+result of the re-examination of the collection was the removal of 
+documents which were exact duplicates (based on identity of timestamps
+down to the second) of other documents in the collection. The new
+collection therefore has only , documents, and thus is called the
+Reuters- collection.  This README describes version . of this
+new collection, which we refer to as "Reuters-, Distribution
+.".
+
+In preparing the collection and documentation we have benefited from
+discussions with Eric Brown, William Cohen, Fred Damerau, Yoram
+Singer, Amit Singhal, and Yiming Yang, among many others.
+
+We thank all the people and organizations listed above for their
+efforts and support, without which this collection would not exist.
+
+A variety of other changes were also made in going from Reuters-
+to Reuters-:
+
+   . Documents were marked up with SGML tags, and a corresponding
+SGML DTD was produced, so that the boundaries of important sections of
+documents (e.g. category fields) are unambiguous.
+   . The set of categories that are legal for each of the five
+controlled vocabulary fields was specified. All category names not
+legal for a field were corrected to a legal category, moved to their
+appropriate field, or removed, as appropriate.
+   . Documents were given new ID numbers, in chronological order, and
+are collected  to a file in order by ID (and therefore in order
+chronologically). 
+
+
+V. What is a Text Categorization Test Collection and Who Cares? 
+
+   *Text categorization* is the task of deciding whether a piece of
+text belongs to any of a set of prespecified categories.  It is a
+generic text processing task useful in indexing documents for later
+retrieval, as a stage in natural language processing systems, for
+content analysis, and in many other roles [LEWISd].
+
+   The use of standard, widely distributed test collections has been a
+considerable aid in the development of algorithms for the related task
+of *text retrieval* (finding documents that satisfy a particular
+user's information need, usually expressed in an textual request).
+Text retrieval test collections have allowed the comparison of
+algorithms developed by a variety of researchers around the world.
+(For more on text retrieval test collections see SPARCKJONES.)
+
+   Standard test collections have been lacking, however, for text
+categorization. Few data sets have been used by more than one
+researcher, making results hard to compare.  The Reuters- test
+collection has been used in a number of published studies since it was
+made available, and we believe that the Reuters- collection will
+be even more valuable.
+
+   The collection may also be of interest to researchers in machine
+learning, as it provides a classification task with challenging
+properties. There are multiple categories, the categories are
+overlapping and nonexhaustive, and there are relationships among the
+categories.  There are interesting possibilities for the use of domain
+knowledge.  There are many possible feature sets that can be extracted
+from the text, and most plausible feature/example matrices are large
+and sparse.  There is even some temporal structure to the data
+[LEWISb], though problems with the indexing and the uneven

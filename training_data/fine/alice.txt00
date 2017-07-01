@@ -1,0 +1,150 @@
+. Introduction 
+
+Jjjj ; The Large Hadron Collider (LHC), under construction at CERN, is designed to deliver 
+i— h \ colliding proton-proton beams at center-of-mass energy of  TeV and lead-lead beams 
+at -,/snn = . TeV. Collisions at these previously unexplored energies offer outstanding 
+opportunities for new physics in compliance with the Standard Model and beyond. For 
+the p-p collisions in particular, in order to fully exploit the enormous physics potential, it 
+is important to have a complete understanding of the reaction mechanism including the 
+interplay of non-perturbative to perturbative phenomena pQ. This is possible with the 
+measurements of particle multiplicity, spectra, strangeness, heavy-flavour, photon and 
+di-lepton production, particle correlations, quarkonia physics, bottom and charm quark 
+cross sections as well as physics of jets [ IB]- Study of the underlying event structures of 
+high multiplicity events and exploration of non-perturbative strong-coupling phenomena 
+related to confinement and hadronic structure at low Bjorken-x values will be of 
+importance. Typical values of the cross sections [H H] for p-p collisions at  TeV 
+are  mb for the total,  mb for non-diffractive inelastic processes,  mb for single 
+diffractive processes and  mb for bottom-quark production. The main contribution 
+will be in the low transverse-momentum (p t ) region for which the ALICE detector is 
+optimized. The LHC will also give access to data above the "knee" of the cosmic-ray 
+energy distribution for the first time. In addition to these topics, the p-p programme 
+of ALICE forms an important benchmark for heavy-ion physics. 
+
+* On leave from Variable Energy Cyclotron Centre, Kolkata, India. 
+
+
+
+Proton-proton physics in ALICE 
+
+
+
+ 
+
+
+
+. ALICE experiment 
+
+The ALICE experiment is specifically designed to study the physics of strongly 
+interacting matter and the quark-gluon plasma in heavy-ion collisions. The low material 
+budget and low magnetic field of the central barrel makes the experiment sensitive 
+to low-pt particles (down to  MeV/c depending on the particle type). The 
+Inner Tracking System (ITS), consisting of six layers of silicon detectors, has excellent 
+vertexing capabilities. The combination of ITS and a large Time Projection Chamber 
+(TPC) provides powerful tracking with excellent momentum resolutions from  MeV/ c 
+to ~% at  GeV/ c. The particle identification of hadrons is provided with the 
+inclusion of a Time-Of-Flight (TOF) system and a single arm Cherenkov detector 
+(RICH). The central barrel is also equipped with a Transition Radiation Detector 
+(TRD) for electron identification and a single arm photon calorimeter (PHOS). The new 
+electromagnetic calorimeter (EMCAL) will improve ALICE capability for measurement 
+of high energy jets. The experimental capabilities are enhanced by a forward muon arm, 
+a Forward Multiplicity Detector (FMD), and a Photon Multiplicity Detector (PMD). 
+The experiment is equipped with Zero Degree Calorimeters (ZDC) and scintillator 
+detectors for trigger and timing (V, TO and ACORDE). These detectors are used for 
+event characterization, luminosity measurement and for rejecting beam gas and pileup 
+events. The minimum bias trigger, comprising of V and ITS signals, is ~% efficient. 
+Several triggers are planned to address topics which include selecting high multiplicity 
+events and enriching the events with muons, electrons, photons and jets. 
+
+. Physics performance 
+
+Below we discuss some of the p-p physics topics, which can be accessed by ALICE based 
+on detailed studies of the detector performances using extensive simulations. 
+
+• Pseudorapidity and multiplicity distributions: The basic measurements are 
+those of the pseudorapidity and multiplicity distributions of charged particles for 
+minimum bias trigger conditions. The charged particle rapidity density as a function 
+of y/s is expected to follow Feynman scaling, the validity of which can be studied by 
+ALICE. The multiplicity distribution is expected to show strong departure from the 
+KNO scaling, which has been observed at lower CERN and Fermilab energies E] . This 
+departure has been attributed to multi-parton interactions and increasing contributions 
+from jets. These effects will play stronger roles at LHC energies. A high multiplicity 
+trigger is employed to record events with large multiplicities for the study of multi- 
+parton interactions, parton saturation effects, correlations, rapidity gaps, HBT source 
+sizes and event structures. Long range forward-backward correlations will be studied 
+to understand the interplay of soft and hard physics [TJ, whereas the charged- neutral 
+correlations should shed light on the formation of disoriented chiral condensates []. 
+
+• p t spectra and (p t ) -multiplicity correlations: The measurements of p t spectra 
+along with those of the pseudorapidity and multiplicity distributions are important for 
+
+
+
+Proton-proton physics in ALICE 
+
+
+
+ 
+
+
+
+tuning model parameters in order to describe the bulk particle production mechanisms 
+and underlying event structures. Proper description of p t spectra, both at the high 
+end where pQCD calculations should be applicable, and the low (non-perturbative) 
+region, is important for understanding any new emerging physics at LHC energies. The 
+advantages of the ALICE experiment is in its capability for p t measurements over a 
+wide range and in the low-pt cutoff. The correlation between (p t ) and multiplicity 
+provides information on the balance between particle production and transverse energy 
+of produced particles P [] - The correlation results will be studied as functions of 
+p t thresholds in order to get insight into the soft and hard sectors. 
+
+• Strangeness production: Quantitative measures of strangeness are obtained by 
+the measurement of yield, spectra of various baryons and mesons and their ratios, 
+including those of resonances to stable particles. These studies help in characterizing 
+the underlying event structure and understanding the baryon production mechanism. 
+The energy dependence of strange particle production exhibits a smooth behavior over 
+a large range in cm. energy, from tens of GeV to . TeV. At the same time, the 
+correlation between the (p t ) of kaons and the charged-particle multiplicity at Tevatron 
+energies has been observed to be stronger compared to pions [] • It will be important 
+to study this behavior at LHC with access to much higher particle densities. 
+
+• Baryon number transfer in rapidity: In hadronic collisions, one of the open 
+questions deals with the mechanism by which baryon number (BN) gets transported to 
+the central rapidity. The standard mechanism of quark-diquark string breaking where 
+the BN is carried by the valence quarks can not transport BN over a large range in 
+rapidity. The concept of string junctions has been introduced [] in which the valence 
+quarks of the proton fragment independently, but are joined to a baryonic gluon field 
+configuration. If the BN is transfered dominantly by gluons [] then the exchange 
+probability is independent of the rapidity interval, whereas in the string junction picture 
+there will be a decrease of this effect pj]. Measurement of baryon distributions over 
+a large rapidity interval (. units) at LHC energies is expected to provide answers to 
+different mechanisms of BN transport. The BN asymmetry will be studied for identified 
+baryons (protons, As, s and fls) at low p t and as a function of particle multiplicity. 
+
+• Heavy flavour and quarkonia production: Measurement of heavy quark 
+production (charm and bottom cross sections) provide important tests of pQCD. Since 
+the charm quarks are created from initial gluon fusion, their measurements at the new 
+kinematical region of low Bjorken-x at LHC energies, would provide evidence for gluon 
+shadowing. ALICE will have simultaneous measurements in the electronic channel in 
+the central rapidity (±. units) and muonic channel in the forward regions (.- in 
+if). The total charm cross section can be measured with good accuracy because of high 
+precision vertexing and close to zero p t cutoff. A high level trigger is being implemented 
+using the transition radiation detector (TRD) to enrich the electron sample. 
+
+• Jets in p— p: The measurement of inclusive jet cross section provides the most 
+stringent test for pQCD predictions, and is essential for studying the jet fragmentation 
+and hadronizaton processes. The jet studies in p-p are essential for understanding the 
+
+
+
+Proton-proton physics in ALICE 
+
+
+
+ 
+
+
+
+high density environment produced in heavy-ion collisions. The jet reconstruction in 
+the initial runs will rely on the tracking measurements. The EMCAL will add to the 
+jet trigger capabilities, extend the jet energy range, improve energy resolution, increase 
+the efficiency and reduce the bias on the jet fragmentation. The tracking capabilities 

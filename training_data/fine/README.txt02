@@ -1,0 +1,150 @@
+     . <EXCHANGES>, </EXCHANGES> [ONCE, SAMELINE]: Same as
+<TOPICS> but for EXCHANGES categories.
+
+     . <COMPANIES>, </COMPANIES> [ONCE, SAMELINE]: These tags always
+appear adjacent to each other, since there are no COMPANIES categories
+assigned in the collection.
+    
+     . <UNKNOWN>, </UNKNOWN> [VARIABLE]: These tags bracket control
+characters and other noisy and/or somewhat mysterious material in the
+Reuters stories.
+
+     . <TEXT>, </TEXT> [ONCE]: We have attempted to delimit all the
+textual material of each story between a pair of these tags.  Some
+control characters and other "junk" material may also be included.
+The whitespace structure of the text has been preserved. The <TEXT>
+tag has the following attribute:
+
+        a. TYPE: This has one of three values: NORM, BRIEF, and
+UNPROC.  NORM is the default value and indicates that the text of the
+story had a normal structure. In this case the TEXT tag appears simply
+as <TEXT>.  The tag appears as <TEXT TYPE="BRIEF"> when the story is a
+short one or two line note.  The tags appears as <TEXT TYPE="UNPROC">
+when the format of the story is unusual in some fashion that limited
+our ability to further structure it.
+
+The following tags optionally delimit elements inside the TEXT
+element. Not all stories will have these tags:
+
+        a. <AUTHOR>, </AUTHOR> : Author of the story. 
+        b. <DATELINE>, </DATELINE> : Location the story
+originated from, and day of the year. 
+        c. <TITLE>, </TITLE> : Title of the story. We have attempted
+to capture the text of stories with TYPE="BRIEF" within a <TITLE>
+element.
+        d. <BODY>, </BODY> : The main text of the story.
+
+
+VII. Categories 
+
+   A test collection for text categorization contains, at minimum, a
+set of texts and, for each text, a specification of what categories
+that text belongs to.  For the Reuters- collection the documents
+are Reuters newswire stories, and the categories are five different
+sets of content related categories.  For each document, a human
+indexer decided which categories from which sets that document
+belonged to.  The category sets are as follows:
+
+              Number of    Number of Categories   Number of Categories 
+Category Set  Categories     w/ + Occurrences      w/ + Occurrences  
+************  **********   ********************   ******************** 
+EXCHANGES                                               
+ORGS                                                    
+PEOPLE                                               
+PLACES                                               
+TOPICS                                               
+
+
+The TOPICS categories are economic subject categories.  Examples
+include "coconut", "gold", "inventories", and "money-supply".  This
+set of categories is the one that has been used in almost all previous
+research with the Reuters data. HAYESb discusses some examples of
+the policies (not always obvious) used by the human indexers in
+deciding whether a document belonged to a particular TOPIC category.
+
+The EXCHANGES, ORGS, PEOPLE, and PLACES categories correspond to named
+entities of the specified type.  Examples include "nasdaq"
+(EXCHANGES), "gatt" (ORGS), "perez-de-cuellar" (PEOPLE), and
+"australia" (PLACES). Typically a document assigned to a category from
+one of these sets explicitly includes some form of the category name
+in the document's text. (Something which is usually not true for
+TOPICS categories.)  However, not all documents containing a named
+entity corresponding to the category name are assigned to these
+category, since the entity was required to be a focus of the news
+story [HAYESb]. Thus these proper name categories are not as simple
+to assign correctly as might be thought.
+
+Reuters-, Distribution . includes five files
+(all-exchanges-strings.lc.txt, all-orgs-strings.lc.txt,
+all-people-strings.lc.txt, all-places-strings.lc.txt, and
+all-topics-strings.lc.txt) which list the names of *all* legal
+categories in each set.  A sixth file, cat-descriptions_.txt
+gives some additional information on the category sets.
+
+Note that a sixth category field, COMPANIES, was present in the
+original Reuters materials distributed by Carnegie Group, but no
+company information was actually included in these fields. In the
+Reuters- collection this field is always empty.
+
+In the table above we note how many categories appear in at least  of
+the , documents in the collection, and how many appear at least
+ of the documents.  Many categories appear in no documents, but we
+encourage researchers to include these categories when evaluating the
+effectiveness of their categorization system. 
+
+Additional details of the documents, categories, and corpus
+preparation process appear in LEWISb, and at greater length in
+Section . of LEWISd.
+
+VIII. Using Reuters- for Text Categorization Research
+
+     In testing a method for text categorization it is important that
+knowledge of the nature of the test data not unduly influence the
+development of the system, or the performance obtained will be
+unrealistically high.  One way of dealing with this is to divide a set
+of data into two subsets: a training set and a test set.  An
+experimenter then develops a categorization system by automated
+training on the training set only, and/or by human knowledge
+engineering based on examination of the training set only.  The
+categorization system is then tested on the previously unexamined test
+set.  A number of variations on this basic theme are possible---see
+WEISS for a good discussion.
+
+     Effectiveness results can only be compared between studies that
+the same training and test set (or that use cross-validation
+procedures).  One problem with the Reuters- collection was that
+the ambiguity of formatting and annotation led different researchers
+to use different training/test divisions. This was particularly
+problematic when researchers attempted to remove documents that "had
+no TOPICS", as there were several definitions of what this meant.
+
+     To eliminate these ambiguities from the Reuters- collection
+we specify exactly which articles are in each of the recommended
+training sets and test sets by specifying the values those articles
+will have on the TOPICS, LEWISSPLIT, and CGISPLIT attributes of the
+REUTERS tags.  We strongly encourage that all studies on Reuters-
+use one of the following training test divisions (or use multiple
+random splits, e.g. cross-validation):
+
+VIII.A. The Modified Lewis ("ModLewis") Split:
+
+ Training Set (, docs): LEWISSPLIT="TRAIN";  TOPICS="YES" or "NO"
+ Test Set (, docs):  LEWISSPLIT="TEST"; TOPICS="YES" or "NO"
+ Unused (,): LEWISSPLIT="NOT-USED" or TOPICS="BYPASS"
+
+This replaces the / split ( unused) of the Reuters-
+collection, which was used in LEWISd (Chapters  and ), LEWISb,
+LEWISc, LEWISe, and LEWISb. Note the following:
+
+      . The duplicate documents removed in forming Reuters- are
+of course not present. 
+      . The documents with TOPICS="BYPASS" are not used, since
+subsequent analysis strongly indicates that they were not categorized
+by the indexers.  
+      . The , unused documents should not be tested on and should
+not be used for supervised learning.  However, they may useful as
+additional information on the statistical distribution of words,
+phrases, and other features that might used to predict categories.
+
+This split assigns documents from April ,  and before to the
+training set, and documents from April ,  and after to the test

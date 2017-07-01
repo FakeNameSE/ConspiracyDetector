@@ -1,0 +1,51 @@
+If you haven't already heard, you should probably download encrypted messaging app Signal.
+
+At least, that's experts' advice for people after the U.S. election.
+
+Between high-profile security failures and the Russian hacks before the election, we should know by now to secure our personal data.
+
+But some people worry that government surveillance will expand under a Donald Trump presidency, especially because he tapped Mike Pompeo, who supports mass surveillance, for CIA chief.
+
+A recent poll of  government and intelligence officials found that the majority are concerned about cybersecurity under a Trump administration and % think it won't improve during his presidency.
+
+Encrypted apps can shield communications from hackers and the government. And Signal, from Open Whisper Systems, is the easiest place to start.
+
+Signal encrypts communications end-to-end, so only the people involved in the conversation can access them. It prevents any third parties from decrypting and reading your messages. WhatsApp, Facebook Messenger's "secret conversations," and Google's Allo app in incognito mode also use the Signal protocol for encrypting chats.
+
+"There's a lot of increased interest in Signal post-election," Signal creator and security researcher Moxie Marlinspike told CNNMoney. "Millions of people were using Signal before, but we've never seen a single event that resulted in this amount of sustained increase and interest."
+
+The daily install rate is % higher than it was before the election, he said.
+
+Part of what makes Signal so appealing is that the interface is similar to other messaging apps, so it doesn't feel like you're using some special kind of service. The app recently added GIFs, a cutesy feature necessary to mainstream encryption -- because you're unlikely to use secure apps unless they work like the stuff you're used to.
+
+But while encryption is important, the first line of defense is making sure you're following basic security measures to protect your devices and your accounts.
+
+"Encryption isn't the first thing to jump on, it's actually the last," said Jessy Irwin, vice president of security and privacy at Mercury Public Affairs.
+
+That might sound pretty basic, but if you're using a weak password or already have a virus on your computer, encryption won't protect you.
+
+Related: Panel to Trump: Train , hackers
+
+You're probably tired of hearing about creating a "strong password" -- and it's a pain to remember a string of numbers and letters -- but it's actually the most important way to protect your personal data.
+
+Change default passwords immediately and don't use things like relatives' names or birthdays -- in fact, if a word has some significance to you, you probably shouldn't use it at all. Password managers like Password or LastPass can keep your strong passwords secure and easily accessible. Implement two-step verification so you'll be alerted via text when someone tries to access your account.
+
+Take a close look at the privacy settings on all your apps, to see whether you're inadvertently sharing information with the public.
+
+Whenever there's new software for your device, update immediately. Often companies release security updates to fix bugs that could give hackers access.
+
+Store important documents on a separate hard drive or thumb drive to keep them out of the cloud where security breaches could leave your data vulnerable.
+
+Related: How this -year-old nearly got scammed out of $,
+
+It's not just Signal that's seen a spike after the U.S. election. TunnelBear, a VPN provider, has seen % more U.S. users sign up for its service in the last month than the month before. VPNs, or virtual private networks, protect your data while browsing online. They are especially important if you're using public Wi-Fi.
+
+Further, VPNs can prevent companies or advertisers from collecting and sharing your data by minimizing how your activities are tracked.
+
+"I try to help people understand a little bit about how much information is collected on them when they browse online," Ryan Dochuk, cofounder and CEO of TunnelBear, said. "Literally every single website that you use will be collected and stored, and often that's shared with third parties and sold to advertisers, insurance companies and financial institutions."
+
+Other VPN options include VyprVPN from Golden Frog and NordVPN.
+
+For further protection, but a potentially slower browsing experience, download the anonymity software Tor. It obscures your web activity and communications from anyone trying to track you.
+
+Irwin says to encourage friends and family -- the people you talk to and care about the most -- to implement privacy and encryption tools as well.

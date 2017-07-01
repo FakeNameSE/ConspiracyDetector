@@ -1,0 +1,66 @@
+
+@inproceedings{LEWISd 
+,author = "David D. Lewis and Richard M. Tong"
+,title = "Text Filtering in {MUC-} and {MUC-}"
+,booktitle = "Proceedings of the Fourth Message Understanding Conference ({MUC-})"
+,year = 
+,month = jun
+,organization = "Defense Advanced Research Projects Agency"
+,publisher = "Morgan Kaufmann"
+,address = "Los Altos, CA"
+}
+
+@inproceedings{LEWISe
+,author = "David D. Lewis" 
+,title = "Feature Selection and Feature Extraction for Text Categorization"
+,booktitle = "Proceedings of Speech and Natural Language Workshop"
+,year = 
+,month = feb 
+,organization = "Defense Advanced Research Projects Agency"
+,publisher = "Morgan Kaufmann"
+,pages = "--"
+}
+
+@inproceedings{LEWISb
+ ,author = "David D. Lewis and Marc Ringuette"
+ ,title = "A Comparison of Two Learning Algorithms for Text Categorization"
+ ,booktitle = "Symposium on Document Analysis and Information Retrieval"
+ ,year = 
+ ,organization = "ISRI; Univ. of Nevada, Las Vegas"
+ ,address = "Las Vegas, NV"
+ ,month = apr
+ ,pages = "--"
+}
+
+@article{LEWISd
+, author       = "David D. Lewis and Philip J. Hayes"
+, title        = "Guest Editorial"
+, journal      = "ACM Transactions on Information Systems"
+, year         =  
+, volume       = 
+, number       = 
+, pages        = ""
+, month        = jul
+}
+
+@article{SPARCKJONES
+,author = "K. {Sparck Jones} and  C. J. {van Rijsbergen}"
+,title =  "Information Retrieval Test Collections"
+,journal = "Journal of Documentation"
+,year = 
+,volume = 
+,number = 
+,pages = "--"
+  }
+
+@book{WEISS
+ ,author = "Sholom M. Weiss and Casimir A. Kulikowski"
+ ,title = "Computer Systems That Learn" 
+ ,publisher = "Morgan Kaufmann"
+ ,year = 
+ ,address = "San Mateo, CA"
+ }
+
+
+
+

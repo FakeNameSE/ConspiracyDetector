@@ -1,0 +1,150 @@
+
+Categories of status include our assessment of whether populations are not reduced, reduced, or 
+severely reduced from historic levels of abundance, or if insufficient data is available to estimate 
+status (data deficient). 
+
+Population Viability Analysis 
+
+For some populations, recent quantitative estimates of abundance and parameters of survival and 
+reproduction are available to determine likelihoods of future population decline using PVA, The 
+PVA model RISKMAN (Taylor et al. ta) is used to estimate risks of future declines in polar 
+bear populations given demographic parameters and uncertainty in data. However, commentors 
+noted that RISKMAN continues to be a work in progress and, although a useful tool, RISKMAN 
+is an extremely complicated model which has not been thoroughly subjected to peer review. The 
+mode! and documentation detailing the model’s structure are available at 
+
+http://www.nrdpfc.ca/riskman/riskman.htm. Publications based on the RISKMAN model include 
+Eastridge and Clark (), McLoughlin et al. (), and Taylor et al. (). 
+
+RISKMAN can incorporate stochasticity into its population model at several levels, including 
+sampling error in initial population size, variance about vital rates due to sample size and annual 
+environmental variation (survival, reproduction, sex ratio), and demographic stochasticity. 
+RISKMAN uses Monte Carlo techniques to generate a distribution of results, and then uses this 
+distribution to estimate population size at a future time, population growth rate, and proportion of 
+runs that result in a population decline set at a predetermined level by the user. The latter 
+approach was adopted to estimate persistence probability. 
+
+The approach to variance in this simulation was to pool sampling and environmental variances 
+for survival and reproduction. The approach was chosen because: ) variances for reproductive 
+parameters often did not lend themselves to separating the sampling component of variance from 
+environmental variance, and ) it allows the risks of population decline including all sources of 
+
+ 
+
+
+
+ 
+
+
+uncertainty in the data (i.e. pooling sampling error with environmental error presents more 
+conservative outcomes of population persistence) to be quantified. 
+
+For each population model, the frequency of occurrence of population declines and/or increases 
+after  years was reported as the cumulative proportion of total simulation runs (, 
+simulations). Model projections using these criteria were chosen because: ) the population 
+inventory cycle for most areas is planned to be - years in duration, and ) we do not 
+advocate using PVA over long time periods in view of potential significant changes to habitat 
+resulting from Arctic climate change. In individual runs populations could recover from 
+‘depletion’, but not from a condition where all males or all females or both were lost. Required 
+population parameter estimates and standard error inputs included annual natural survival rate 
+(stratified by age and sex as supported by the data), age of first reproduction, age-specific litter 
+production rates for females available to have cubs (i.e. females with no cubs and females with 
+-year-olds), litter size, the sex ratio of cubs, initial population size, and the sex, age, and family 
+status distribution of the harvest. Input data are shown in Tables -. 
+
+The standing age distribution measured from captured bears was always female-biased, likely 
+due to long-term harvesting of males in populations for which simulations were performed 
+(Table ). Because we wished to err on the side of caution, for all simulations we used the stable 
+age distribution expected for the population at the anticipated annual removal rate as the initial 
+age/sex distribution (i.e. initializing the population at the stable age distribution produced more 
+conservative outcomes compared to that of the existing standing age distribution). The harvest 
+selectivity and vulnerability array was identified by comparing the standing age distribution of 
+the historical harvest of populations to the total mortality, stable age distribution. Harvest was 
+stratified by sex, age (cubs and yearlings, age -, age -, and age >) and family status 
+(alone, with cubs and yearlings, or with -year-olds). We ran harvest simulations using natural 
+survival rates (without harvest), upon which anticipated annual removal rates (i.e. human-caused 
+mortality from all sources) were added. 
+
+
+C. Population Summary 
+
+
+ 
+
+
+
+ 
+
+
+. East Greenland (EG) 
+
+No inventories have been conducted in recent years to determine the size of the polar bear 
+population in eastern Greenland. Satellite-telemetry has indicated that polar bears range widely 
+along the coast of eastern Greenland and in the pack ice in the Greenland Sea and Fram Strait 
+(Born et al. , Wiig et al, ). However, various studies have indicated that more or less 
+resident groups of bears may occur within this range (Born , Sandell et al, ). Although 
+there is little evidence of a genetic difference between populations in the eastern Greenland and 
+Svalbard - Franz Josef Land regions (Paetkau et al. ), satellite telemetry and movement of 
+marked animals indicate that the exchange between these populations is minimal (Wiig , 
+Born et al. , Wiig et al. ). 
+
+During -, the annual catch in eastern and southwestern Greenland averaged  bears 
+(range, - bears per year) (Bom and Sonne ). The catch of polar bears taken in 
+southwestern Greenland, south of ° N, must be added to the catch statistics from eastern 
+Greenland because polar bears arrive in the southwestern region with the drift ice that comes 
+around the southern tip from eastern Greenland (Sandell et al.   ). During   (first year of 
+instituting a new catch recording system) and  there was no significant trend in the catch of 
+polar bears in eastern and southwestern Greenland (Bom and Sonne ). Greenland introduced 
+polar bear quotas taking effect on  January . The total quota for  is  polar bears for 
+the two East Greenland municipalities Ittoqqortoormiit () and Ammassalik (). The 
+maximum quota for those municipalities in Southwest Greenland that hunt bears coming from 
+the East Greenland population is  for . 
+
+Despite an increasing practice by hunters from Scoresby Sound in central East Greenland to go 
+further north to take polar bears during spring, there is no information to indicate an overall 
+increase in hunting by East Greenlanders (Sandell et al. ). Based on harvest sampling from 
+ polar bears in Scoresby Sound during -, the proportion of adult (=independent) 
+female polar bears in the catch in eastern Greenland is estimated at . (Danish National 
+
+
+ 
+
+
+
+ 
+
+
+Environmental Research Institute, unpubl. data). 
+
+Given the estimates of the proportion of adult females in the catch and an annual catch of about 
+ bears (i.e. eastern and southwestern Greenland combined), a minimum population of about 
+ individuals would be needed to sustain this take. However, the actual number of animals in 
+the exploited population is unknown. 
+
+During the last decades, the ice in the East Greenland area has diminished both in extent 
+(Parkinson et al. , Parkinson b) and thickness (ACIA , Yu, Y. et al. ). It has 
+been predicted that this trend will continue in this century (Rysgaard et al. ). Furthermore, 
+polar bears in East Greenland have relatively high body burdens of organic pollutants (Norstrom 
+et al.  , Dietz et al. ) and levels of these pollutants seem to have increased between   
+and - (Dietz et al. ). Several studies indicate that organic pollutants may have 
+negatively affected polar bears in this region (overveiw in Born and Sonne ). 
+
+The effects of Arctic warming on East Greenland polar bears have not been documented. 
+However, considering the effects of climate change in other parts of the Arctic (e.g.Westem 
+Hudson Bay), these environmental changes may also be in effect and cause concern about how 
+polar bears in East Greenland may be negatively affected. 
+
+. Barents Sea (BS) 
+
+The size of the BS population was estimated to be about  in August  (Aars et al. ) 
+which suggests that earlier estimates based on den counts and ship surveys (Larsen ) were 
+too high. This suggestion is further supported by ecological data that indicate the population 
+grew steadily the first decade after protection from hunting in , and then either continued to 
+grow or stabilized after that. Denning occurs on several islands both on Franz Josef Land 
+(Belikov and Matveev ) and Svalbard (Larsen ). Studies on individual movement and 
+population ecology using telemetry data and mark-recapture methods have been conducted in the 
+Svalbard area since the early s (Larsen , , Wiig , Mauritzen et al. , 
+
+
+ 
+

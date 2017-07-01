@@ -1,0 +1,150 @@
+distribution of stories within the timespan covered may make this
+collection a poor one to explore temporal issues.
+
+
+VI. Formatting 
+
+     The Reuters- collection is distributed in  files. Each of
+the first  files (reut-.sgm through reut-.sgm) contain 
+documents, while the last (reut-.sgm) contains  documents.  
+
+     The files are in SGML format.  Rather than going into the details
+of the SGML language, we describe here in an informal way how the SGML
+tags are used to divide each file, and each document, into sections.
+Readers interested in more detail on SGML are encouraged to pursue
+one of the many books and web pages on the subject.
+
+     Each of the  files begins with a document type declaration line:
+               <!DOCTYPE lewis SYSTEM "lewis.dtd">
+
+The DTD file lewis.dtd is included in the distribution.  Following the
+document type declaration line are individual Reuters articles marked
+up with SGML tags, as described below.
+
+
+   VI.A. The REUTERS tag:
+
+    Each article starts with an "open tag" of the form
+
+    <REUTERS TOPICS=?? LEWISSPLIT=?? CGISPLIT=?? OLDID=?? NEWID=??>
+
+where the ?? are filled in an appropriate fashion.  Each article ends
+with a "close tag" of the form:
+
+     </REUTERS>
+
+In all cases the <REUTERS> and </REUTERS> tags are the only items
+on their line.  
+
+     Each REUTERS tag contains explicit specifications of the values
+of five attributes, TOPICS, LEWISSPLIT, CGISPLIT, OLDID, and NEWID.
+These attributes are meant to identify documents and groups of 
+documents, and have the following meanings: 
+
+     . TOPICS : The possible values are YES, NO, and BYPASS:
+        a. YES indicates that *in the original data* there was at
+least one entry in the TOPICS fields.
+        b. NO indicates that *in the original data* the story had no
+entries in the TOPICS field.
+        c. BYPASS indicates that *in the original data* the story was
+marked with the string "bypass" (or a typographical variant on that
+string).
+     This poorly-named attribute unfortunately is the subject of much
+confusion. It is meant to indicate whether or not the document had
+TOPICS categories *in the raw Reuters- dataset*.  The sole use of
+this attribute is to defining training set splits similar to those
+used in previous research. (See the section on training set splits.)
+The TOPICS attribute does **NOT** indicate anything about whether or
+not the Reuters- document has any TOPICS categories.  (Version
+. of this document was errorful on this point.)  That can be
+determined by actually looking at the TOPICS field. A story with
+TOPICS="YES" can have no TOPICS categories, and a story with
+TOPICS="NO" can have TOPICS categories.
+     Now, a reasonable (though not certain) assumption is that for all
+TOPICS="YES" stories the indexer at least thought about whether the
+story belonged to a valid TOPICS category.  Thus, the TOPICS="YES"
+stories with no topics can reasonably be considered negative examples
+for all  valid TOPICS categories.
+     TOPICS="NO" stories are more problematic in their interpretation.
+Some of them presumedly result because the indexer made an explicit
+decision that they did not belong to any of the  valid TOPICS
+categories.  However, there are many cases where it is clear that a
+story should belong to one or more TOPICS categories, but for some
+reason the category was not assigned.  There appear to be certain time
+intervals where large numbers of such stories are concentrated,
+suggesting that some parts of the data set were simply not indexed, or
+not indexed for some categories or category sets.  Also, in a few
+cases, the indexer clearly meant to assign TOPICS categories, but put
+them in the wrong field.  These cases have been corrected in the
+Reuters- data, yielding stories that have TOPICS categories, but
+where TOPICS="NO", because the the category was not assigned in the
+raw version of the data.
+     "BYPASS" stories clearly were not indexed, and so are useful only
+for general distributional information on the language used in the
+documents.
+
+     . LEWISSPLIT : The possible values are TRAINING, TEST, and
+NOT-USED.  TRAINING indicates it was used in the training set in the
+experiments reported in LEWISd (Chapters  and ), LEWISb,
+LEWISe, and LEWISb.  TEST indicates it was used in the test set
+for those experiments, and NOT-USED means it was not used in those
+experiments.
+
+     . CGISPLIT : The possible values are TRAINING-SET and
+PUBLISHED-TESTSET indicating whether the document was in the training
+set or the test set for the experiments reported in HAYES and
+HAYESb.
+
+     . OLDID : The identification number (ID) the story had in the
+Reuters- collection.
+
+     . NEWID : The identification number (ID) the story has in the
+Reuters-, Distribution . collection.  These IDs are assigned to
+the stories in chronological order.
+
+In addition, some REUTERS tags have a sixth attribute, CSECS, which
+can be ignored.  
+
+The use of these attributes is critical to allowing comparability
+between different studies with the collection, and is discussed
+further in Section VIII.
+
+
+  VI.B. Document-Internal Tags 
+
+     Just as the <REUTERS> and </REUTERS> tags serve to delimit
+documents within a file, other tags are used to delimit elements
+within a document.  We discuss these in the order in which they
+typically appear, though the exact order should not be relied upon in
+processing. In some cases, additional tags occur within an element
+delimited by these top level document-internal tags.  These are
+discussed in this section as well.
+
+     We specify below whether each open/close tag pair is used exactly
+once (ONCE) per a story, or a variable (VARIABLE) number of times
+(possibly zero).  In many cases the start tag of a pair appears only
+at the beginning of a line, with the corresponding end tag always
+appearing at the end of the same line.  When this is the case, we
+indicate it with the notation "SAMELINE" below, as an aid to those
+processing the files without SGML tools.  
+
+     . <DATE>, </DATE> [ONCE, SAMELINE]: Encloses the date and time
+of the document, possibly followed by some non-date noise material.
+
+     . <MKNOTE>, </MKNOTE> [VARIABLE] : Notes on certain hand
+corrections that were done to the original Reuters corpus by Steve
+Finch.
+
+     . <TOPICS>, </TOPICS> [ONCE, SAMELINE]: Encloses the list of
+TOPICS categories, if any, for the document. If TOPICS categories are
+present, each will be delimited by the tags <D> and </D>.
+     
+     . <PLACES>, </PLACES> [ONCE, SAMELINE]: Same as <TOPICS>
+but for PLACES categories.
+
+     . <PEOPLE>, </PEOPLE> [ONCE, SAMELINE]: Same as <TOPICS>
+but for PEOPLE categories.
+
+     . <ORGS>, </ORGS> [ONCE, SAMELINE]: Same as <TOPICS> but
+for ORGS categories.
+

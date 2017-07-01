@@ -1,0 +1,45 @@
+Stringing lights on Christmas trees is a standard practice for the holidays, but there's a lot you can do to decorate beyond plugging something into an extension cord.
+
+Now that smart home products are more affordable and ubiquitous, 2016 is ready to deliver a next-level celebration.
+
+Whether you plan on impressing guests at a party or just want to make sure your house is warm before you get home after vacation, let's take a look at how smart home devices can automate the season.
+
+Getting started
+
+First, you'll need to decide which ecosystem you want to be a part of, such as the Samsung (SSNLF) SmartThings or Apple (AAPL, Tech30) HomeKit platform. Not all devices work within the same ecosystems, so you'll want to buy smart home products that run on the platform you choose or you'll have to switch between apps. Some home builders, like Lennar Homes, are integrating HomeKit from the ground up, so new homeowners get smart devices with their house keys.
+
+Next, ensure the products you buy are secure. Change the default log-in name and password on all new devices before installing them. In October, the cyberattack that took parts of the internet offline, including sites such as Twitter, Netflix and Spotify, were carried out by products connected to the home that were infected with malware.
+
+Related: Your Hackable House
+
+The good news is more companies are building security directly into products. For instance, Apple requires HomeKit-capable smart products to meet security and technical specifications. Set up is typically easy, too -- you add the gadget to the system by plugging in the device and entering a special code within the HomeKit app.
+
+And if you're using HomeKit, Siri can handle your requests. You can ask the voice assistant to lock the doors doors, turn the lights on or off or set the mood for a movie night.
+
+Connected lights
+
+Lights are a great entry-point into the smart home space. Automate your home's ambiance with Philips Hue light bulbs, with kits that start at $130, and create a different environment in each room. If you're having a movie night, you can dim the bulbs from the couch via the smartphone app, or turn the room a festive green when unwrapping gifts. You can also sync Hue lights with the Amazon Echo and Siri, as well as platforms like Google Home, SmartThings and Nest.
+
+These lights also work with third-party apps such as the Hue Disco to create fun light shows for a holiday party. While there shouldn't be any security issues, researchers found a flaw in the Hue system earlier this year that could have allowed attackers to remotely take control of the lights from afar. Philips has since patched the flaw.
+
+Outlets
+
+App-connected outlets, such as those from Incipio and ConnectSense (at $40 and $60, respectively), plug into your home's regular outlets to control small appliances and lights. Add one behind the Christmas to avoid climbing under the branches; you can control it via your phone instead. It also works for outdoor lights, so you don't need to freeze when you turn them off late at night.
+
+Web cams
+
+To capture Santa delivering gifts, cameras like Nest Cam ($200) or Blink ($100) can be placed throughout the home. It's easy to check in while you're away to see if pets or kids are peeking into presents before Christmas morning.
+
+Related: These Christmas lights don't need to be wrapped around the tree
+
+Smart thermostats
+
+Smart thermostats like Nest or Ecobee, both cost $250, let you set and adjust temperatures from afar. This means you can return from a holiday trip to a toasty home.
+
+Smart speakers
+
+The Amazon (AMZN, Tech30) Echo smart speaker, at $180, works with hundreds of smart home gadgets -- many of which are highlighted above. You can also ask Alexa, its built-in voice assistant, to play music, tell you the weather and ask for Santa's location. It'll also add and buy presents directly via the Echo, or set timers when baking holiday cookies.
+
+Outside of the box
+
+If you'd rather keep your home offline but still have decorations with a tech flare, consider the Tree Dazzler, a quirky curtain of lights that hang over your tree. There's also the Star Shower, an As Seen on TV laser device that projects thousands of tiny stars onto the front of your house. Both cost about $40.

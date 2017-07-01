@@ -1,0 +1,150 @@
+set.
+
+WARNING: Given the many changes in going from Reuters- to
+Reuters-, including correction of many typographical errors in
+category labels, results on the ModLewis split cannot be compared
+with any published results on the Reuters- collection!
+
+
+VIII.B. The Modified Apte ("ModApte") Split :
+
+ Training Set (, docs): LEWISSPLIT="TRAIN";  TOPICS="YES"
+ Test Set (, docs): LEWISSPLIT="TEST"; TOPICS="YES"
+ Unused (, docs):   LEWISSPLIT="NOT-USED"; TOPICS="YES"
+                     or TOPICS="NO" 
+                     or TOPICS="BYPASS"
+
+This replaces the / split (, not used) of the
+Reuters- collection.  These are our best approximation to the
+training and test splits used in APTE and APTEb. Note the
+following:
+
+      . As with the ModLewis, those documents removed in forming
+Reuters- are not present, and BYPASS documents are not used.  
+      . The intent in APTE and APTEb was to use the Lewis split,
+but restrict it to documents with at least one TOPICS categories.
+However, but it was not clear exactly what Apte, et al meant by having
+at least one TOPICS category (e.g. how was "bypass" treated, whether
+this was before or after any fixing of typographical errors, etc.). We
+have encoded our interpretation in the TOPICS attribute.  ***Note
+that, as discussed above, some TOPICS="YES" stories have no TOPICS
+categories, and a few TOPICS="NO" stories have TOPICS
+categories. These facts are irrelevant to the definition of the
+split.*** If you are using a learning algorithm that requires each
+training document to have at least TOPICS category, you can screen out
+the training documents with no TOPICS categories. Please do NOT screen
+out any of the , documents - that will make your results
+incomparable with other studies.
+
+      . As with ModLewis, it may be desirable to use the , Unused
+documents for gathering statistical information about feature
+distribution.
+
+As with ModLewis, this split assigns documents from April ,  and
+before to the training set, and documents from April ,  and after
+to the test set.  The difference is that only documents with at least
+one TOPICS category are used.  The rationale for this restriction is
+that while some documents lack TOPICS categories because no TOPICS
+apply (i.e. the document is a true negative example for all TOPICS
+categories), it appears that others simply were never assigned TOPICS
+categories by the indexers. (Unfortunately, the amount of time that
+has passed since the collection was created has made it difficult to
+establish exactly what went on during the indexing.)
+
+WARNING: Given the many changes in going from Reuters- to
+Reuters-, including correction of many typographical errors in
+category labels, results on the ModApte split cannot be compared
+with any published results on the Reuters- collection!
+
+
+VIII.C. The Modified Hayes ("ModHayes") Split: 
+ Training Set ( docs): CGISPLIT="TRAINING-SET"
+ Test Set ( docs): CGISPLIT="PUBLISHED-TESTSET"
+ Unused ( docs)
+
+This is the best approximation we have to the training and test splits
+used in HAYES, HAYESb, and Chapter  of LEWISd.  It replaces the
+/ split of the Reuters- collection.  Note the following:
+
+      . As with the other splits, the duplicate documents removed in
+forming Reuters- are not present. 
+
+      . "Training" in HAYES and HAYESb was actually done by human
+beings looking at the documents and writing categorization rules. 
+We can not be sure which of the document files were actually looked
+at.  
+
+      . We specify that the BYPASS stories and the TOPICS=NO stories
+are part of the training set, since they were used during manual
+knowledge engineering in the original Hayes experiments. That does not
+mean researchers are obliged to give these stories to, for instance, a
+supervised learning algorithm.  As mentioned in the other splits, they
+may be more useful for getting distributional information about
+features.
+ 
+There are a number of problems with the ModHayes split that make it
+less than desirable for text categorization research, including
+unusual distribution of categories, pairs of near-duplicate documents,
+and chronological burstiness.  (See [LEWISb, Ch. ] for more
+details.)
+
+Despite these problems, this split is of interest because it provides
+the ability to compare results with those of the CONSTRUE system
+[HAYES, HAYESb].  Comparison of results on the ModHayes split with
+previously published results on the original Hayes split in HAYES
+and HAYESb (and LEWISb, Ch. ) is possible, though the following
+points should be taken into account:
+
+   . The testset we provide in the ModHayes split has one fewer
+document than the one Hayes used. The document that was removed
+(OLDID="") was a timestamp duplicate of the document with
+OLDID="" and NEWID="". So in computing effectiveness
+measures for comparison with HAYES/b, the document with
+NEWID="" should be counted twice.
+
+   . The documents in the Hayes testset had relatively few errors and
+anomalies in their categorization. And the errors which we did find
+and correct appear unlikely to have affected the original Hayes
+results. In particular, it appears that the only errors in the TOPICS
+field were the addition of a few invalid categories that were not
+evaluated on.  However, for completeness we list the changes in the
+Hayes testset documents made going from Reuters- to Reuters-
+(all documents are referred to by their NEWID):
+
+   Removal of invalid TOPIC "loan" : , , , , ,
+, , , , 
+
+   Removal of invalid TOPIC "gbond" : , 
+
+   Removal of invalid TOPIC "tbill" : 
+
+   Removal of invalid TOPIC "cbond" : 
+
+   Removal of invalid TOPIC "fbond" : 
+
+   Correction of invalid PEOPLE mancera to mancera-aguayo: ,
+, , , 
+
+   Correction of invalid PEOPLE andriesssen to andriessen : 
+
+   Correction of invalid PLACES "ivory" and "coast" to single correct
+PLACE "ivory-coast": 
+
+    . The effectiveness measures used in HAYES and HAYESb were
+somewhat nonstandard. See Ch.  of LEWISd for a discussion.
+
+
+VIII.D. Other Splits
+  
+     We strongly encourage researchers to use one (or more) of the
+above splits for their experiments (or use cross-validation on one of
+the sets of documents defined in the above splits).  We recommend the
+Modified Apte ("ModApte") Split for research on predicting the TOPICS
+field, since the evidence is that a significant number of documents
+that should have TOPICS do not.  The ModLewis split can be used if the
+researcher has a strong need to test the ability of a system to deal
+with examples belonging to no category. While it is likely that some
+of these examples should indeed belong to a category, the ModLewis
+split is at least better than the corresponding split from
+Reuters-, in that it eliminates the "bypass" stories.
+
