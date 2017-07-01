@@ -1,7 +1,26 @@
 # ConspiracyDetector
 Crackpot conspiracy theory detection through machine learning
+## Requirements:
+- Python3
+- Sklearn
+- tabulate
+- nltk (you might need to download some of its data files too)
+
+All of these libraries should be installable through `pip` and if nltk gives you any errors when running this, run `import nltk` and then `nltk.download()` in an interactive python interpreter. Select the most popular packages to download.
+## Usage:
+Note, if python2 is your default, replace python with python3 for all of these commands:
+
+To train run `python train.py filename.pkl.z training_data/` in the projects root directory with filename being the desired name of your saved model.
+
+To run a prediction: `python predict.py filename.pkl.z test/marx.txt` with filename being the name of your savefile and marx.txt the name of the file you want a prediction on.
+### Why no pretrained models?
+I did not include a pretrained model for several reasons:
+1) Do you really want to load and exeecute a binary file you got from some random person on the internet
+2) Because of the nature of pickle and joblib, a saved model would only work on a computer running the same version of sklearn and python
+3) It should'nt be to much of a problem seeing as training a new model only takes me a little over two mintues on a laptop from 2007.
+
 ## So what is this?
-Just as my title says, this weekend project (actually developed over summer break over the course of two weekdays) is a system that uses machine learning to detect conspiracy theories. In other words, I applied the miracles of modern mathematics and computer science to the prickly problem of detecting people who are totally off their rocker, or in the words of the verdict that my machine gives, "bonkers!". If you would like, you can read more about my motivations and the actual development of the project [here](/machine%20learning/coding/conspiracy-detector/).
+Just as my title says, this weekend project (actually developed over summer break over the course of two weekdays) is a system that uses machine learning to detect conspiracy theories. In other words, I applied the miracles of modern mathematics and computer science to the prickly problem of detecting people who are totally off their rocker, or in the words of the verdict that my machine gives, "bonkers!". If you would like, you can read more about my motivations and the actual development of the project [here](https://ggarrettgrossman.ddns.net/machine%20learning/coding/conspiracy-detector/).
 ## And what does it actually do?
 ### What it does...
 This state of the art system, trained upon the craziness of the ilk of Alex Jones and David Duke (alongside many others, as well as more rational literature to prevent the machine from gaining too dim a view of humanity if it ever becomes sentient), delivers a verdict of "Bonkers!" or "Not too nuts!" when given a text file as an input.
@@ -16,7 +35,7 @@ No, not quite.
 ### Dark Magic!
 Closer, but still not quite accurate.
 ### Support Vector Machines!
-Yep, almost indistinguishable from dark magic, this system is actually powered by math! It uses a support vector machine (SVM), a machine learning model that can be used as a binary classifier, meaning a much fancier spam filter which is capable of assigning new inputs (after training) to one of two categories (so bonkers and not bonkers in this case). My blog post on this project  [here](/machine%20learning/coding/conspiracy-detector/) delves a little deeper into the actual mechanics of this process (hint: Thanks to David Duke and his love for Jews and communists, I had to add word stemming among other things to the tokenizaton process to keep this system from jumping every time it heard one of those two words).
+Yep, almost indistinguishable from dark magic, this system is actually powered by math! It uses a support vector machine (SVM), a machine learning model that can be used as a binary classifier, meaning a much fancier spam filter which is capable of assigning new inputs (after training) to one of two categories (so bonkers and not bonkers in this case). My blog post on this project  [here](https://ggarrettgrossman.ddns.net/machine%20learning/coding/conspiracy-detector/) delves a little deeper into the actual mechanics of this process (hint: Thanks to David Duke and his love for Jews and communists, I had to add word stemming among other things to the tokenizaton process to keep this system from jumping every time it heard one of those two words).
 ## So what constitutes a crazy text?
 After each training session, the system extracts the top ten features that you can see here:
 
@@ -67,7 +86,7 @@ Now, some weird things come up, mainly on the crazy side, because the input text
 Overall, the top 10 features seem to indicate that a lot of conspiracy theories tend to focus on Jews, Obama, and the Government, as well as on our freedom being taken away, as the words "American" and "freedom" seem to indicate.
 
 ## So, can I see it in action?
-Of course! I have open sourced the code [here](https://github.com/FakeNameSE/ConspiracyDetector), and here is a sample result:
+Of course! I have open sourced the code (duh) and here is a sample result:
 `Input classified as:`
 <table>
 <tbody>
