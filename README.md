@@ -15,7 +15,7 @@ To train run `python train.py filename.pkl.z training_data/` in the projects roo
 To run a prediction: `python predict.py filename.pkl.z test/marx.txt` with filename being the name of your savefile and marx.txt the name of the file you want a prediction on.
 ### Why no pretrained models?
 I did not include a pretrained model for several reasons:
-1) Do you really want to load and exeecute a binary file you got from some random person on the internet
+1) Do you really want to load and execute a binary file you got from some random person on the internet
 2) Because of the nature of pickle and joblib, a saved model would only work on a computer running the same version of sklearn and python
 3) It should'nt be to much of a problem seeing as training a new model only takes me a little over two mintues on a laptop from 2007.
 
