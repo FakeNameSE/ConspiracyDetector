@@ -69,7 +69,7 @@ After each training session, the system extracts the top ten features that you c
 </table>
 
 Or, if bar charts are more your speed, you can see the top 20 features for each category here:
-![Bar chart](figure.svg  "Top 20 features")
+![Bar chart](ggarrettgrossman.ddns.net/assets/images/conspiracydetector_features.svg  "Top 20 features")
 
 Now, some weird things come up, mainly on the crazy side, because the input text is still a little dirty despite several attempts to clean it up. However, the system actually works quite well as you can see from its confusion matrix and classification report (from the test set):
 
