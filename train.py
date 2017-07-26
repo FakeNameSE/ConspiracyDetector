@@ -47,7 +47,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 from nltk import word_tokenize          
 from nltk.stem.wordnet import WordNetLemmatizer 
-
+import matplotlib.pyplot as plt
 
 # Tokenizer that does stemming and strips ponctuation
 def tokenize(text):
@@ -59,6 +59,23 @@ def tokenize(text):
 		lemas.append(WordNetLemmatizer().lemmatize(item))
 	return lemas
 		
+# Plot the most important features
+def plot_coefficients(classifier, feature_names, top_features=20):
+	print("Generating list of most important features")
+	coef = classifier.coef_.ravel()
+	top_positive_coefficients = np.argsort(coef)[-top_features:]
+	top_negative_coefficients = np.argsort(coef)[:top_features]
+	top_coefficients = np.hstack([top_negative_coefficients, top_positive_coefficients])
+	# create plot
+	print("Creating Plot...")
+	plt.figure(figsize=(15, 5))
+	colors = ['red' if c < 0 else 'blue' for c in coef[top_coefficients]]
+	plt.bar(np.arange(2 * top_features), coef[top_coefficients], color=colors)
+	feature_names = np.array(feature_names)
+	plt.xticks(np.arange(1, 1 + 2 * top_features), feature_names[top_coefficients], rotation=60, ha='right')
+	plt.savefig('figure.svg', bbox_inches='tight')
+	plt.show()
+
 if __name__ == "__main__":
 	# NOTE: we put the following in a 'if __name__ == "__main__"' protected
 	# block to be able to use a multi-core grid search that also works under
@@ -119,7 +136,8 @@ if __name__ == "__main__":
 	grid_search = GridSearchCV(
 		pipeline, 
 		parameters, 
-		n_jobs=-1)
+		n_jobs=-1,
+		verbose=True)
 	
 	print("Training and performing grid search...\n")
 	t0 = time()
@@ -181,3 +199,5 @@ if __name__ == "__main__":
 		i += 1
 	print(tabulate(a, ["Rank", "Weight", "Bonkers", "Weight", "Fine"], tablefmt="fancy_grid"))
 	#print(tabulate(a, ["Rank", "Weight", "Bonkers", "Weight", "Fine"], tablefmt="html"))
+	print("Plotting...")
+	plot_coefficients(clf, feature_names)
